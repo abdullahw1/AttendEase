@@ -101,8 +101,6 @@ while True:
             response = requests.post(url)
             if response.status_code == 200:
                 print("Attendance recorded successfully.")
-            else:
-                print(f"Failed to record attendance. \n attendance_record?attendance_id={attendance_id_counter}&student_id={student_id}&class_id={class_id}&timestamp={timestamp}")
 
     # Display the webcam feed with recognized faces
     cv2.imshow('webcam', img)
